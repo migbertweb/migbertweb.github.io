@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+   
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'); */
+
+
+@font-face {
+  font-family: "burtons";
+  src: url("/Burtons.otf");
+}
+
+@font-face {
+  font-family: "roboto";
+src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+}
+.sociallink:hover {
+  @apply rounded-lg border-4 border-teal-600;
+  }
+
+
+
