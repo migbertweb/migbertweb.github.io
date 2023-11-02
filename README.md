@@ -1,5 +1,5 @@
-# Migbert Yanez
+# Portafolio de Proyectos
 
-## Personal Site
+## Migbert Yanez
 
 Sitio realizado en React con ViteJS
