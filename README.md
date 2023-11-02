@@ -1,5 +1,5 @@
-# Migbert Yanez
+# Portafolio de Proyectos
 
-## Personal Site
+## "Desenvolvedor Web Jr."
 
 Sitio realizado en React con ViteJS
