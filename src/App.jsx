@@ -1,5 +1,4 @@
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-// import deved from "/dev-ed-wave.png";
 import avatar from "/avatar.jpg";
 import code from "/code.png";
 import design from "/design.png";
@@ -12,16 +11,14 @@ import web5 from "/web5.png";
 import web6 from "/web6.png";
 import { useEffect, useState } from "react";
 import personalData from "./datos";
-// import { NavHead } from './components/NavHead'
 import Atropos from "atropos/react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 function App() {
   const [theme, setTheme] = useState(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
     }
-
     return "light";
   });
 
@@ -44,10 +41,19 @@ function App() {
           <h1 className="text-xl font-burtons">DevelopByMe</h1>
           <ul className="flex items-center">
             <li>
-              <BsFillMoonStarsFill
-                onClick={handleChangeTheme}
-                className="cursor-pointer text-2xl"
-              />
+              {theme == "light"
+                ? (
+                  <BsFillMoonStarsFill
+                    onClick={handleChangeTheme}
+                    className="cursor-pointer text-2xl"
+                  />
+                )
+                : (
+                  <BsFillSunFill
+                    onClick={handleChangeTheme}
+                    className="cursor-pointer text-2xl"
+                  />
+                )}
             </li>
             <li>
               <a
@@ -60,7 +66,6 @@ function App() {
           </ul>
         </nav>
 
-        {/* <NavHead setTheme={setTheme} theme={theme} /> */}
         <section className="min-h-screen">
           {personalData.map((data, key) => {
             return (
